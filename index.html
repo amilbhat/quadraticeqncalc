@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Quadratic Equation Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="quad-info">
+        <h1>
+          For a Quadratic Equation <br />
+          <span>ax2 + bx + c = 0</span>
+        </h1>
+        <p>Please Enter Value of a , b and c</p>
+      </div>
+      <div class="user-inputs">
+        <div>
+          Enter the Value of a :
+          <input type="number" id="coeffx2" />
+        </div>
+        <div>
+          Enter the Value of b :
+          <input type="number" id="coeffx" />
+          <div>
+            Enter the Value of c :
+            <input type="number" id="const-term" />
+          </div>
+        </div>
+      </div>
+      <div class="Result-field">
+        <button onclick="quadEqn()" class="calc-btn">Calculate</button>
+        <h2>One roots is : <span id="root-1"></span></h2>
+        <h2>Other roots is : <span id="root-2"></span></h2>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
